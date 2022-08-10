@@ -1,0 +1,15 @@
+def trojuholnik(a, b, c):
+    if a==0 or b==0 or c==0:
+        print("Nie je to trojuholnik")
+    elif a<=b+c and b<=a+c and c<=a+b:
+        print("Je to trojuholnik")
+        if a==b and b==c:
+            print("-rovnostranny")
+        if a==b and c>b or a==c and b>c or c==b and a>b or a==b and c<b or a==c and b<c or c==b and a<b:
+             print("-rovnoramenny")
+        if a>b>c or a>c>b or b>a>c or b>c>a or c>a>b or c>b>a:
+            print("-vseobecny")
+    
+    else:
+        print("Nie je to trojuholnik")
+   
